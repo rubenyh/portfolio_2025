@@ -94,6 +94,19 @@ export default function Home() {
             </div>
 
 
+          <div>
+            <br />
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">Experience</h1>
+
+          </div>
+
+
+          <div>
+            <br />
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">Education</h1>
+
+          </div>
+
     </>
     );
 }
