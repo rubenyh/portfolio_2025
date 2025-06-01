@@ -1,9 +1,9 @@
 "use client";
 
-import Image from 'next/image';
-import ProjectCard from '@/components/projectCard';
-import EducationCard from '@/components/educationCard';
-import Skill from '@/components/skill';
+import Image from "next/image";
+import ProjectCard from "@/components/projectCard";
+import EducationCard from "@/components/educationCard";
+import Skill from "@/components/skill";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col items-start">
           <br/>
           <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold">
-            HI! I'M <span className="text-[#B4A784]">RUBEN,</span>
+            HI! I"M <span className="text-[#B4A784]">RUBEN,</span>
           </h1>
           <br />
           <h1 className="text-3xl sm:text-4xl lg:text-5 xl font-bold">COMPUTER SCIENCE STUDENT</h1>
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
           <div className="mt-6">
           <a
-            href="/assets/resume.pdf"
+            href="/pdfs/RubenYanezResume.pdf"
             download="Ruben_Yanez_Resume.pdf"
             className="px-4 py-3 rounded-[30px] bg-[#B4A784] text-[#322F35] font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 cursor-pointer flex items-center space-x-2"
           >
@@ -66,16 +66,16 @@ export default function Home() {
           width={246}
           height={246}
           className="transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2 w-full h-auto"
-          style={{ outline: '1px solid #B4A784', position: 'relative', zIndex: 1 }}
+          style={{ outline: "1px solid #B4A784", position: "relative", zIndex: 1 }}
           />
         </div>
 
         <div
           className="absolute bottom-8 animate-bounce cursor-pointer"
           onClick={() => {
-          const nextSection = document.querySelector('#Projects-section');
+          const nextSection = document.querySelector("#Projects-section");
           if (nextSection) {
-            nextSection.scrollIntoView({ behavior: 'smooth' });
+            nextSection.scrollIntoView({ behavior: "smooth" });
           }
           }}
         >
@@ -115,21 +115,21 @@ export default function Home() {
       <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">Projects</h1>
 
       <ProjectCard
-        title={'Interactive Social Media Network Visualizer'}
+        title={"Interactive Social Media Network Visualizer"}
         description={
-        'A web application that visualizes user relationships on social media platforms using interactive graph structures. Built with React and D3.js, it allows users to explore connections, identify influencers, and analyze network patterns in real time.'
+        "A web application that visualizes user relationships on social media platforms using interactive graph structures. Built with React and D3.js, it allows users to explore connections, identify influencers, and analyze network patterns in real time."
         }
-        imageUrl={'/imgs/network-graphs.jpg'}
-        projectLink={'https://github.com/rubenyh/network-graphs'}
-        externalLink={'https://network-graphs-three.vercel.app/'}
+        imageUrl={"/imgs/network-graphs.jpg"}
+        projectLink={"https://github.com/rubenyh/network-graphs"}
+        externalLink={"https://network-graphs-three.vercel.app/"}
       />
       <ProjectCard
-        title={'Real-Time Hand Gesture Recognition with Mediapipe'}
+        title={"Real-Time Hand Gesture Recognition with Mediapipe"}
         description={
-        'Implemented real-time hand detection using Google’s Mediapipe library. The project processes webcam input to identify and track hand landmarks, enabling gesture recognition for interactive applications and user interfaces.'
+        "Implemented real-time hand detection using Google’s Mediapipe library. The project processes webcam input to identify and track hand landmarks, enabling gesture recognition for interactive applications and user interfaces."
         }
-        imageUrl={'/imgs/hand-pose.jpg'}
-        projectLink={'https://github.com/rubenyh/hand-gesture-mediapipe'}
+        imageUrl={"/imgs/hand-pose.jpg"}
+        projectLink={"https://github.com/rubenyh/hand-gesture-mediapipe"}
       />
       </section>
 
