@@ -46,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${madimiOne.variable} antialiased`} >
+      <body className={`${madimiOne.variable} antialiased bg-black`} >
         <Navbar />
         {children}
       </body>
