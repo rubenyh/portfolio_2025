@@ -3,18 +3,19 @@
 import Image from 'next/image';
 import ProjectCard from '@/components/projectCard';
 import EducationCard from '@/components/educationCard';
+import Skill from '@/components/skill';
 
 export default function Home() {
   return (
     <>
-      <div id="Home-section" className="h-screen flex items-center justify-center mx-8 px-3">
+      <section id="Home-section" className="h-screen flex items-center justify-center mx-8 px-3">
         <div className="flex flex-col items-start">
           <br/>
           <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold">
             HI! I'M <span className="text-[#B4A784]">RUBEN,</span>
           </h1>
           <br />
-          <h1 className="text-3xl sm:text-4xl lg:text-5 xl font-bold">A COMPUTER SCIENCE STUDENT</h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-5 xl font-bold">COMPUTER SCIENCE STUDENT</h1>
           <br />
           <div className="flex space-x-4 mt-4">
             <a
@@ -86,50 +87,69 @@ export default function Home() {
           className="mx-auto"
           />
         </div>
-      </div>
+      </section>
 
-      <div id="Projects-section">
+      <section id="Skills-section">
+        <br />
+        <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">Tech Skills</h1>
+        <div className="flex flex-wrap justify-center gap-6 mt-8 w-5/6 max-w-4xl mx-auto">
+          <Skill name="TypeScript" icon="/assets/skills/typescript.svg" />
+          <Skill name="React" icon="/assets/skills/react.svg" />
+          <Skill name="Next.js" icon="/assets/skills/nextjs.svg" />
+          <Skill name="Tailwind CSS" icon="/assets/skills/tailwind.svg" />
+          <Skill name="Python" icon="/assets/skills/python.svg" />
+          <Skill name="C++" icon="/assets/skills/cpp.svg" />
+          <Skill name="Git" icon="/assets/skills/git.svg" />
+          <Skill name="Tensorflow" icon="/assets/skills/tensorflow.svg" />
+          <Skill name="ROS2" icon="/assets/skills/Ros_logo.svg" />
+          <Skill name="Java" icon="/assets/skills/java.svg" />
+          <Skill name="OpenCV" icon="/assets/skills/opencv.svg" />
+          <Skill name="JavaSript" icon="/assets/skills/js.svg" />
+          <Skill name="Pytorch" icon="/assets/skills/pytorch.svg" />
+        </div>
+      </section>
+      <br />
+
+
+      <section id="Projects-section">
       <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">My Projects</h1>
 
       <ProjectCard
-        title={'Graphing Users Relations in Social Media'}
+        title={'Interactive Social Media Network Visualizer'}
         description={
-        'bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blala bla bla blabla bla bla blala bla bla blabla bla bla blala bla bla blabla bla bla bla'
+        'A web application that visualizes user relationships on social media platforms using interactive graph structures. Built with React and D3.js, it allows users to explore connections, identify influencers, and analyze network patterns in real time.'
         }
-        imageUrl={'/imgs/profile-picture.jpg'}
-        projectLink={''}
-      ></ProjectCard>
+        imageUrl={'/imgs/network-graphs.jpg'}
+        projectLink={'https://github.com/rubenyh/network-graphs'}
+        externalLink={'https://network-graphs-three.vercel.app/'}
+      />
       <ProjectCard
-        title={'Graphing Users Relations in Social Media'}
+        title={'Real-Time Hand Gesture Recognition with Mediapipe'}
         description={
-        'bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blala bla bla blabla bla bla blala bla bla blabla bla bla blala bla bla blabla bla bla bla'
+        'Implemented real-time hand detection using Google’s Mediapipe library. The project processes webcam input to identify and track hand landmarks, enabling gesture recognition for interactive applications and user interfaces.'
         }
         imageUrl={'/imgs/profile-picture.jpg'}
         projectLink={''}
-      ></ProjectCard>
-      </div>
+      />
+      </section>
 
-      <div id="Experience-section">
+      {/* <div id="Experience-section">
       <br />
       <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">Experience</h1>
       </div>
+ */}
 
-      <div id="Education-section">
+      
+      <section id="Education-section">
       <br />
       <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">Education</h1>
       <EducationCard
-        institution="University of Example"
-        degree="Bachelor of Science in Computer Science"
-        duration="2020 - 2024"
-        description="Focused on software development, algorithms, and data structures. Participated in various hackathons and coding competitions."
+        institution="CETYS University"
+        degree="Bachelor of Engineering in Computer Science"
+        duration="2024 - 2028"
+        description="Focused on continuous improvement in software development, algorithms, and data structures. Actively participated in hackathons, coding competitions, and contributed to the MATEROV Competition 2025 as a member of the software team."
       />
-      <EducationCard
-        institution="Example High School"
-        degree="High School Diploma"
-        duration="2016 - 2020"
-        description="Graduated with honors. Member of the computer science club and robotics team."
-      />
-      </div>
+      </section>
     </>
     );
 }

@@ -27,7 +27,7 @@ export default function Navbar() {
             {isOpen && (
             <aside className="fixed top-0 right-0 h-screen w-64 bg-[#464132] text-white shadow-lg z-1000">
                 <ul className="flex flex-col space-y-5 p-5">
-                {["Home-section", "Projects-section", "Experience-section", "Education-section"].map((section, index) => (
+                {["Home-section", "Skills-section", "Projects-section","Education-section"].map((section, index) => (
                     <li 
                     key={index}
                     className="text-[20px] hover:underline hover:underline-offset-4 hover:decoration-[#B4A784] cursor-pointer transition-all duration-300"
@@ -43,7 +43,7 @@ export default function Navbar() {
             </aside>
             )}
             <ul className="hidden md:flex justify-end space-x-5">
-            {["Home-section", "Projects-section", "Experience-section", "Education-section"].map((section, index) => (
+            {["Home-section","Skills-section", "Projects-section","Education-section"].map((section, index) => (
                 <li 
                 key={index}
                 className="text-[20px] hover:underline hover:underline-offset-4 hover:decoration-[#B4A784] cursor-pointer transition-all duration-300 hover:scale-x-110 origin-center"
