@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col items-start">
           <br/>
           <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold">
-            HI! I"M <span className="text-[#B4A784]">RUBEN,</span>
+            HI! I&apos;M <span className="text-[#B4A784]">RUBEN,</span>
           </h1>
           <br />
           <h1 className="text-3xl sm:text-4xl lg:text-5 xl font-bold">COMPUTER SCIENCE STUDENT</h1>
