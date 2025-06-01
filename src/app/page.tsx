@@ -112,7 +112,7 @@ export default function Home() {
 
 
       <section id="Projects-section">
-      <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">My Projects</h1>
+      <h1 className="text-4xl sm:text-5xl lg:text-5xl text-center mt-8">Projects</h1>
 
       <ProjectCard
         title={'Interactive Social Media Network Visualizer'}
@@ -128,8 +128,8 @@ export default function Home() {
         description={
         'Implemented real-time hand detection using Google’s Mediapipe library. The project processes webcam input to identify and track hand landmarks, enabling gesture recognition for interactive applications and user interfaces.'
         }
-        imageUrl={'/imgs/profile-picture.jpg'}
-        projectLink={''}
+        imageUrl={'/imgs/hand-pose.jpg'}
+        projectLink={'https://github.com/rubenyh/hand-gesture-mediapipe'}
       />
       </section>
 
@@ -148,6 +148,7 @@ export default function Home() {
         degree="Bachelor of Engineering in Computer Science"
         duration="2024 - 2028"
         description="Focused on continuous improvement in software development, algorithms, and data structures. Actively participated in hackathons, coding competitions, and contributed to the MATEROV Competition 2025 as a member of the software team."
+        logo="/imgs/cetys-logo.jpg"
       />
       </section>
     </>
