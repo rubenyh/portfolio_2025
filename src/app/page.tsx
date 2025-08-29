@@ -46,7 +46,7 @@ export default function Home() {
           </div>
           <div className="mt-6">
           <a
-            href="/pdfs/RubenYanezResume.pdf"
+            href="/pdfs/Ruben_Resume.pdf"
             download="Ruben_Yanez_Resume.pdf"
             className="px-4 py-3 rounded-[30px] bg-[#B4A784] text-[#322F35] font-bold transition-all duration-300 hover:opacity-90 hover:scale-105 cursor-pointer flex items-center space-x-2"
           >
